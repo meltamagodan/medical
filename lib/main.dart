@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:medical/pages/DoctorsPayingArchive.dart';
+import 'package:medical/pages/PatientHistoryArchive.dart';
+import 'package:medical/pages/PatientLoginPage.dart';
+import 'package:medical/pages/PatientPayingList.dart';
 import 'package:medical/pages/PatientReviewPage.dart';
+import 'package:medical/pages/SchedulePreviewArchive.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,7 +13,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const PatientReviewPage(),
+      home: const CreativePatientRegistrationApp(),
     );
   }
 }
